@@ -1,0 +1,19 @@
+[package]
+name = "api_server"
+version = "0.1.0"
+authors = ["matt kantor <matthewkantor@gmail.com>"]
+
+[dependencies]
+hyper = "0.9"
+url = "1"
+serde = "0.8"
+serde_json = "0.8"
+valico = "1"
+mysql = "8.0.0"
+
+[dependencies.rustless]
+git = "https://github.com/rustless/rustless"
+
+
+[dependencies.iron]
+version = "*"

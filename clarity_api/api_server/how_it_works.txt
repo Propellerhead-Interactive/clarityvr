@@ -1,0 +1,36 @@
+When I put the wearable on, it starts collecting data and sending it to the server.
+
+
+At some point the wearable has to know to start sending data for stor
+
+Wearable sends:
+- Timestamp
+- sessionId
+- markerType
+- Amplitude
+
+
+Unity has to also send data:
+- Timestamp
+- SessionId
+- movement_data
+
+We need a shared sessionId.  
+- User interface creates a new session
+- starting the game gets a new session
+- wearable finds a new session and stores the variable
+
+We need a session table
+- user id
+- session_id
+- status (new, in progress, complete)
+- start_time
+- end_time
+
+tables
+- session
+- wearable data
+- game data (recording)
+
+
+
