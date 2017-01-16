@@ -20,9 +20,9 @@
             <td><%= patient.last_name %></td>
             <td><%= patient.dob %></td>
             <td><%= patient.issue_overview %></td>
-            <td><%= link_to 'Show', patient %></td>
+            
             <td><%= link_to 'Edit', edit_patient_path(patient) %></td>
-            <td><%= link_to 'Destroy', patient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Manage Sessions', patient %></td>
           </tr>
         <% end %>
       </tbody>
